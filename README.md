@@ -15,7 +15,7 @@ There are different algorithms for image hashing using different transformations
 
 Perpetual hash (phash): A cosine transformation
 Difference hash (dhash): The difference between adjacent pixels
-After a hash transformation, images can be compared quickly with the Hamming distance. The Python code for applying a hash transformation is shown in the code. A hamming distance of 0 shows an identical image (duplicate), whereas a larger hamming distance shows that the images are different from each other. The following snippet imports Python packages, such as PIL, imagehash, and distance. imagehash is a Python package that supports various types...
+After a hash transformation, images can be compared quickly with the Hamming distance. The Python code for applying a hash transformation is shown in the code. A hamming distance of 0 shows an identical image (duplicate), whereas a larger hamming distance shows that the images are different from each other. The Following code snippet imports Python packages, such as PIL, imagehash, and distance. imagehash is a Python package that supports various types...
 
 # 1.2 Extracting features from an image
 Once we know how to detect edges, the next task is to detect features. Many edges combine to form features. Feature extraction is the process of recognizing visual patterns in an image and extracting any discriminating local features that match with the image of an unknown object. Before performing feature extraction, it is important to understand the image histogram. An image histogram is the distribution of the color intensity of the image. 

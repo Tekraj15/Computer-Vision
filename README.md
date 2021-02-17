@@ -41,3 +41,15 @@ image = Image.open('../car.png')
 plt.imshow(image)
 
 image_arr = np.asarray(image) # convert image
+
+image_arr.shape()
+
+color = ('blue', 'green', 'red')
+
+for i,histcolor in enumerate(color):
+
+ carhistogram = cv2.calcHist([image_arr],[i],None,[256],[0,256])
+ 
+ plt.plot(carhistogram,color=histcolor)
+ 
+ plt.xlim([0,256])

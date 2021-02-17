@@ -21,14 +21,23 @@ After a hash transformation, images can be compared quickly with the Hamming dis
 Once we know how to detect edges, the next task is to detect features. Many edges combine to form features. Feature extraction is the process of recognizing visual patterns in an image and extracting any discriminating local features that match with the image of an unknown object. Before performing feature extraction, it is important to understand the image histogram. An image histogram is the distribution of the color intensity of the image. 
 
 An image feature matches with the test image if the histograms are similar. 
+
 Importing required libraries and reading image
 
 import numpy as np
+
 import cv2
+
 import matplotlib.pyplot as plt
+
 %matplotlib inline
+
 import matplotlib.pyplot as plt
+
 from PIL import Image
+
 image = Image.open('../car.png')
+
 plt.imshow(image)
+
 image_arr = np.asarray(image) # convert image
